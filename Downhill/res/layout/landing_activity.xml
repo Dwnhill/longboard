@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/landing_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="A to B"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="70dip"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/input_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/landing_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:hint="Where you at"
+        android:inputType="textPostalAddress" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/input_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/landing_title"
+        android:layout_below="@+id/input_one"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:hint="Where you headed"
+        android:inputType="textPostalAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/landing_go_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:text="Time to fly" />
+
+</RelativeLayout>
